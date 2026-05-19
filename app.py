@@ -38,6 +38,10 @@ def climate(name):
         return f'{name}'
     elif name == 'Seoul':
         return f'{name}'
+    elif name == 'São Paulo':
+        return f'{name}'
+    elif name == 'Rio de Janeiro':
+        return f'{name}'
     else:
         return 'That is not a top 10 cities in the world by population'
 
@@ -64,11 +68,16 @@ def conditions(name):
         condition = 'Sunny'
     elif name == 'Seoul':
         condition = 'Cloudy'
+    elif name == 'São Paulo':
+        condition = 'Rainy'
+    elif name == 'Rio de Janeiro':
+        condition = 'Cloudy'
     else:
         condition = 'Unknown'
     return f'City: {name} - Condition: {condition}'
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
